@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="onLoad()">
+    <header>
+      <h1>Tarot Card Generator</h1>
+    </header>
+
+    <main>
+      <h3 id="titulo">Clique no botão para revelar a carta</h3>
+
+      <div id="tarot"></div>
+      <div id="empty"></div>
+
+      <div id="card" class="card fool">
+        <div id="card-text">
+          <h2>O Tolo</h2>
+          <p> Quando essa carta aparece significa que você progrediu espiritualmente e aprendeu uma lição. No entanto, você agora precisa começar um novo ciclo, desde a estaca 0. Indica excentricidade e descoberta de um mundo novo. Novidades chegando ema sua vida e com elas inseguranças, incertezas e a promessa de que tudo pode acontecer. </p>
+        </div>
+      </div>
+      <div id="card" class="card magician">
+        <div id="card-text">
+          <h2>O Mágico</h2>
+          <p>Esta carta simboliza que você consegue lidar com os problemas que chegam até você, e não quer que você tem super poderes. Você sabe se utilizar do que tem à disposição para vencer dificuldades.
+Indica que conseguirá superar os desafios. Cuidado com assuntos delicados e não se deixe influenciar.
+          </p>
+        </div>
+      </div>
+      <div id="card" class="card h-priestess">
+        <div id="card-text">
+          <h2>A Papisa</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+            illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+            blanditiis at cupiditate perferendis facere, veritatis quam impedit
+            facilis repellat.
+          </p>
+        </div>
+      </div>
+      <div id="card" class="card empress">
+        <div id="card-text">
+          <h2>A Imperatriz</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+            illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+            blanditiis at cupiditate perferendis facere, veritatis quam impedit
+            facilis repellat.
+          </p>
+        </div>
+      </div>
+      <div id="card" class="card emperor">
+        <div id="card-text">
+          <h2>O Imperador</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+            illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+            blanditiis at cupiditate perferendis facere, veritatis quam impedit
+            facilis repellat.
+          </p>
+        </div>
+      </div>
+      <div id="card" class="card pope">
+          <div id="card-text">
+        <h2>O Papa</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      <div id="card" class="card lovers">
+          <div id="card-text">
+        <h2>Os Amantes</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      <div id="card" class="card car">
+          <div id="card-text">
+        <h2>O Carro</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      <div id="card" class="card strength">
+          <div id="card-text">
+        <h2>A Força</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      <div id="card" class="card hermit">
+          <div id="card-text">
+        <h2>O Eremita</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+        </div>
+      </div>
+      <div id="card" class="card wheel">
+          <div id="card-text">
+        <h2>Roda da Fortuna</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      <div id="card" class="card justice">
+          <div id="card-text">
+        <h2>A Justiça</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      <div id="card" class="card hanged">
+          <div id="card-text">
+        <h2>O Enforcado</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      <div id="card" class="card death">
+          <div id="card-text">
+        <h2>A Morte</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      <div id="card" class="card temper">
+          <div id="card-text">
+        <h2>A Temperança</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      <div id="card" class="card devil">
+          <div id="card-text">
+        <h2>O Diabo</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      <div id="card" class="card tower">
+          <div id="card-text">
+        <h2>A Torre</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      <div id="card" class="card star">
+        <div id="card-text">
+        <h2>A Estrela</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      
+      <div id="card" class="card moon">
+        <div id="card-text">
+        <h2>A Lua</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      <div id="card" class="card sun">
+        <div id="card-text">
+        <h2>O Sol</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      <div id="card" class="card judge">
+        <div id="card-text">
+        <h2>O Julgamento</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      <div id="card" class="card world">
+        <div id="card-text">
+        <h2>O Mundo</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          illo quibusdam facere? Modi sed nihil maiores aperiam sint delectus
+          blanditiis at cupiditate perferendis facere, veritatis quam impedit
+          facilis repellat.
+        </p>
+        </div>
+      </div>
+      <button id="card-btn">Mostrar Carta</button>
+      <button id="close-btn">Fechar</button>
+    </main>
+
+    <footer>
+      <p>Code by Kyvs</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

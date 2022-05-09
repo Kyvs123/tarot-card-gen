@@ -1,0 +1,578 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #541690;
+    background-image: url(bg-img/body-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    background: white;
+    padding-bottom: .75rem;
+    padding-top: .75rem;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    color: #541690;
+    text-align: left;    
+}
+
+main{ 
+    background: white;
+    min-width: 250px;
+    height: 70vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 12px;
+        
+}
+h3{
+    color:#FF4949;
+    padding: .5rem 1rem;    
+    font-size: 25px;
+    
+}
+/*DECK DE CARTAS*/
+
+/*área da carta*/
+.card {
+    display: none;
+    height: 420px;
+    width: 220px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*inicial da carta*/
+#empty{
+    background-image: url(bg-img/card-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    height: 420px;
+    width: 220px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* CARTA 00-TOLO */
+.fool{
+background-image: url(cards/0-louco.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: contain;
+margin: .5rem;
+cursor: pointer;    
+}
+.fool>#card-text {
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+.fool:hover>#card-text {
+    display: block;
+}
+/*CARTA 01-MAGO*/
+.magician{
+    background-image: url(cards/01-mago.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    cursor: pointer;
+}
+.magician > #card-text {
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+
+}
+.magician:hover > #card-text {
+    display: block;
+}
+/*CARTA 02-SACERDOTISA*/
+.h-priestess {
+    background-image: url(cards/02-papisa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    cursor: pointer;
+}
+.h-priestess > #card-text {
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+.h-priestess:hover>#card-text {
+    display: block;
+}
+/*CARTA 03-IMPERATRIZ*/
+.empress{  
+    /* display: none;   */
+    background-image: url(cards/03-imperatriz.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    cursor: pointer;
+}
+.empress>#card-text {
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+.empress:hover>#card-text {
+    display: block;
+}
+/*CARTA 04-IMPERADOR*/
+.emperor {
+    background-image: url(cards/04-imperador.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    cursor: pointer;
+}
+.emperor > #card-text {
+    background: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+.emperor:hover>#card-text {
+    display: block;
+}
+/*CARTA 05-PAPA*/
+.pope {
+    background-image: url(cards/05-papa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    cursor: pointer;    
+}
+.pope>#card-text {
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+.pope:hover>#card-text {
+    display: block;
+}
+/*CARTA 06-AMANTES*/
+.lovers {
+    background-image: url(cards/06-amantes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    cursor: pointer;    
+}
+.lovers>#card-text{
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+.lovers:hover>#card-text{
+    display: block;
+}
+/*CARTA 07-CARRO*/
+.car{
+    background-image: url(cards/07-carro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    cursor: pointer;
+}
+.car>#card-text{
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+.car:hover>#card-text{
+    display: block;
+}
+/*CARTA 08-FORÇA*/
+.strength {
+    background-image: url(cards/08-força.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    cursor: pointer;
+}
+.strength>#card-text {
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+
+.strength:hover>#card-text {
+    display: block;
+}
+/*CARTA 09-EREMITA*/
+.hermit{
+    background-image: url(cards/09-eremita.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    cursor: pointer;
+}
+.hermit>#card-text {
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+
+.hermit:hover>#card-text {
+    display: block;
+}
+/*CARTA 10-RODA DA FORTUNA*/
+.wheel{
+    background-image: url(cards/10-roda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    cursor: pointer;
+}
+.wheel>#card-text {
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+.wheel:hover>#card-text {
+    display: block;
+}
+/*CARTA 11-A JUSTIÇA*/
+.justice{
+    background-image: url(cards/11-justiça.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    cursor: pointer;
+}
+.justice>#card-text {
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+.justice:hover>#card-text {
+    display: block;
+}
+/*CARTA 12-O ENFORCADO*/
+.hanged{
+    background-image: url(cards/12-enforcado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    cursor: pointer;
+}
+.hanged>#card-text {
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+.hanged:hover>#card-text {
+    display: block;
+}
+/*CARTA 13-A MORTE*/
+.death{
+    background-image: url(cards/13-morte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    cursor: pointer;
+}
+.death>#card-text {
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+
+.death:hover>#card-text {
+    display: block;
+}
+/*CARTA 14-A TEMPERANÇA*/
+.temper{
+    background-image: url(cards/14-temperança.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+        
+    margin: .5rem;
+    cursor: pointer;
+}
+.temper>#card-text {
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+.temper:hover>#card-text {
+    display: block;
+}
+/*CARTA 15-O DIABO*/
+.devil{
+background-image: url(cards/15-diabo.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: contain;
+margin: .5rem;
+cursor: pointer;
+}
+.devil>#card-text {
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+.devil:hover>#card-text {
+    display: block;
+}
+/*CARTA 16-A TORRE*/
+.tower{
+    
+    background-image: url(cards/16-torre.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    cursor: pointer;
+}
+.tower>#card-text {
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+.tower:hover>#card-text {
+    display: block;
+}
+/*CARTA 17-A ESTRELA*/
+.star{
+    
+    background-image: url(cards/17-estrela.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    cursor: pointer;
+}
+.star > #card-text{
+    background-color: #541690;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+.star:hover > #card-text{
+    display: block;
+}
+/*CARTA 18-A LUA*/
+.moon{
+    
+    background-image: url(cards/18-lua.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+
+}
+.moon > #card-text{
+    background-color: #541690;
+    color: white;
+    height: 100%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+}
+
+.moon:hover > #card-text{
+    display: block;
+}
+/*CARTA 19-O SOL*/
+.sun {
+    background-image: url(cards/19-sol.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+
+}
+.sun > #card-text{
+    background-color: #541690;
+    height: 100%;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    display: none;
+}
+.sun:hover > #card-text{
+    display: block;
+}
+/*CARTA 20- O JULGAMENTO*/
+.judge{
+    
+    background-image: url(cards/20-julgamento.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    
+}
+.judge > #card-text {
+    background-color: #541690;
+    height: 100%;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    display: none;
+}
+
+.judge:hover > #card-text {
+    display: block;
+}
+/*CARTA 21 - O MUNDO*/
+.world{
+    display: none;
+    background-image: url(cards/21-mundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: contain;
+    margin: .5rem;
+    
+}
+.world > #card-text {
+    background-color: #541690;
+    height: 100%;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    display: none;
+}
+
+.world:hover > #card-text {
+    display: block;
+}
+
+/*buttons*/
+
+button {
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    background:#FF4949;
+    color: yellow;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: none;
+    margin: .75rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: yellow;
+    color:#FF4949;
+}
+
+button:active {
+    background: blue;
+}
+#close-btn {
+    display: none;
+}
+footer{
+    background-color: white;
+    margin-top: 3rem;
+    padding: 1rem;
+}
